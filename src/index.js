@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import React from 'react'
+import  ReactDOM  from 'react'
+import App from './App'
+/* import React from 'react'; 
+import ReactDOM from 'react-dom'; 
+  
+// This is a functional component 
+const Welcome=()=>
+{ 
+        return <h1>Hello World!</h1> 
+} 
+  
+ReactDOM.render( 
+    <Welcome />, 
+    document.getElementById("root") 
 );
+Let us see step-wise what is happening in the above example: 
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+1. We call the ReactDOM.render() as the first parameter.
+2. React then calls the component Welcome, which returns <h1>Hello World!</h1>; as the result.
+3.Then the ReactDOM efficiently updates the DOM to match with the returned element and renders that element to the DOM element with id as “root”.
+*/
+ReactDOM.render(<App/>, document.getElementById('root'));
